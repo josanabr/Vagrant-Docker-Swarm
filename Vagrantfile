@@ -10,10 +10,6 @@ Vagrant.configure("2") do |config|
   config.vm.define "manager" do |swarm|
   	swarm.vm.hostname = "manager"
 	swarm.vm.network "private_network", ip: "192.168.33.10"
-        swarm.vm.provision "shell" do |s| 
-          s.path = "setup_swarm.sh"
-          s.args = ["manager"]
-        end
   	swarm.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '2' ]
@@ -23,10 +19,6 @@ Vagrant.configure("2") do |config|
   config.vm.define "worker-01" do |swarm|
   	swarm.vm.hostname = "worker-01"
 	swarm.vm.network "private_network", ip: "192.168.33.11"
-        swarm.vm.provision "shell" do |s| 
-          s.path = "setup_swarm.sh"
-          s.args = ["worker-01"]
-        end
   	swarm.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '2' ]
@@ -36,10 +28,6 @@ Vagrant.configure("2") do |config|
   config.vm.define "worker-02" do |swarm|
   	swarm.vm.hostname = "worker-02"
 	swarm.vm.network "private_network", ip: "192.168.33.12"
-        swarm.vm.provision "shell" do |s| 
-          s.path = "setup_swarm.sh"
-          s.args = ["worker-02"]
-        end
   	swarm.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '2' ]

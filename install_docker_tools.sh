@@ -17,9 +17,7 @@
 #
 # Y estas son las lineas para descargar 'docker' desde el repositorio de Ubuntu
 #
-sudo apt installl -y docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
+sudo apt update && sudo apt install -y docker.io && sudo systemctl start docker && sudo systemctl enable docker
 #
 # Adicionando el grupo 'docker' al perfil del usuario 'vagrant'
 #
