@@ -17,7 +17,7 @@
 #
 # Y estas son las lineas para descargar 'docker' desde el repositorio de Ubuntu
 #
-sudo apt installl -y docker.io
+sudo apt install -y docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 #
