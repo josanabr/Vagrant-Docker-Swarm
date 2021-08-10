@@ -2,7 +2,7 @@
 
 *Fecha: 2021-08-10*
 
-En este repositorio se encuentran los archivos que permiten el despliegue sobre un cluster de máquinas virtuales de la herramienta Docker Swarm.
+En este repositorio se encuentran los archivos que permiten el despliegue de la herramienta Docker Swarm sobre un cluster de máquinas virtuales.
 
 Para llevar a cabo el despliegue de este cluster se necesitan las siguientes herramientas instaladas en su computador (adicional se indica la versión donde fueron probados estos scripts y el comando para validar la disponibilidad de la herramienta en su sistema):
 
