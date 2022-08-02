@@ -10,14 +10,14 @@
 # Las siguientes lineas muestran commo instalar Docker del repositorio oficial
 #
 # ---> COMIENZO
-# curl -fsSL https://get.docker.com -o get-docker.sh
-# sh get-docker.sh 
-# rm -f get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh 
+rm -f get-docker.sh
 # ---> FIN
 #
 # Y estas son las lineas para descargar 'docker' desde el repositorio de Ubuntu
 #
-sudo apt install -y docker.io
+#sudo apt install -y docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 #
