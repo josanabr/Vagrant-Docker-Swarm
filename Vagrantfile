@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
   	swarm.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '2' ]
-		vb.customize [ 'modifyvm', :id, '--name', 'worker-01' ]
+		vb.customize [ 'modifyvm', :id, '--name', 'swarm-worker-01' ]
   	end
   end
   config.vm.define "worker-02" do |swarm|
@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
   	swarm.vm.provider :virtualbox do |vb|
 		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '2' ]
-		vb.customize [ 'modifyvm', :id, '--name', 'worker-02' ]
+		vb.customize [ 'modifyvm', :id, '--name', 'swarm-worker-02' ]
   	end
   end
 end
