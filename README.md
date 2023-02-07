@@ -28,3 +28,12 @@ Una vez clonado este repositorio en su máquina, ingrese al directorio `Vagrant-
 Al ejecutar este comando se comenzará el proceso de creación de tres máquinas virtuales que serán aprovisionadas con el orquestador Docker Swarm.
 
 Una vez aprovisionadas se puede ingresar al nodo `manager` a través del comando `vagrant ssh manager` y ejecutar los comandos que están en [este enlace](https://docs.docker.com/engine/swarm/stack-deploy/).
+
+---
+
+Es posible que se ejecute una vez la creación de las máquinas virtuales `docker swarm init` y el comando arroje la cadena de conexión para nuevos nodos. 
+Si por alguna razón esa cadena se pierde, es posible pedirle a `docker` que muestre nuevamente la cadena de la siguiente manera:
+
+```
+docker swarm join-token manager
+```
