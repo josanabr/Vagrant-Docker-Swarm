@@ -2,6 +2,8 @@
 
 *Fecha: 2021-08-10*
 
+*Última actualización: 2025-05-23*
+
 En este repositorio se encuentran los archivos que permiten el despliegue de la herramienta Docker Swarm sobre un cluster de máquinas virtuales.
 
 Para llevar a cabo el despliegue de este cluster se necesitan las siguientes herramientas instaladas en su computador (adicional se indica la versión donde fueron probados estos scripts y el comando para validar la disponibilidad de la herramienta en su sistema):
@@ -14,12 +16,12 @@ Para llevar a cabo el despliegue de este cluster se necesitan las siguientes her
 </tr>
 <tr>
 <td> Vagrant </td> 
-<td> 2.2.16 </td> 
+<td> 2.2.6 </td> 
 <td> <code>vagrant --version</code> </td> 
 </tr>
 <tr>
 <td> VirtualBox </td> 
-<td> 6.1.22r144080 </td> 
+<td> 6.1.50_Ubuntur161033 </td> 
 <td> <code>VBoxManage --version</code> </td> 
 </tr>
 </table>
