@@ -17,11 +17,11 @@ Vagrant.configure("2") do |config|
           s.args = ["manager"]
         end
   	swarm.vm.provider :virtualbox do |vb|
-		vb.customize [ 'modifyvm', :id, '--memory', '2048' ]
+		vb.customize [ 'modifyvm', :id, '--memory', '1024' ]
 		vb.customize [ 'modifyvm', :id, '--cpus', '1' ]
 		vb.customize [ 'modifyvm', :id, '--name', 'swarm-manager' ]
   	end
-    swarm.vm.synced_folder "/home/john/Src/docker-compose/Fisher", "/Fisher"
+#    swarm.vm.synced_folder "/home/john/Src/docker-compose/Fisher", "/Fisher"
   end
   config.vm.define "worker-01" do |swarm|
   	swarm.vm.hostname = "worker-01"
