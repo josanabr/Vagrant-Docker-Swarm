@@ -4,7 +4,8 @@
 Vagrant.configure("2") do |config|
   # Esta linea permite que todos los nodos definidos en este 'Vagrantfile' 
   # instalen 'docker' y 'docker-compose'
-  config.vm.provision "shell", path: "install_docker_tools.sh"
+  config.vm.provision "shell", path: "setup_docker_apt_repository.sh"
+  config.vm.provision "shell", path: "setup_install_docker.sh"
   config.vm.provision "shell", inline: "cat /vagrant/hosts >> /etc/hosts"
   config.vm.box = "ubuntu/bionic64"
   config.vm.define "manager" do |swarm|
